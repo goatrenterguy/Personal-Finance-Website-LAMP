@@ -1,0 +1,170 @@
+:root {
+    --main-accent-color: #167b5f;
+  }
+
+body {
+    font-family: Nunito, sans-serif;
+}
+
+#landingHeader {
+    background-color: var(--main-accent-color);
+    min-height: 33vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#headerText {
+    color: #ffffff;
+    text-align: center;
+    font-size: 8vh;
+}
+
+@media screen and (max-width: 1000px){
+    #headerText {
+        font-size: 8vw;
+    }
+    #landingHeader{
+        min-height: 33vw;
+    }
+}
+
+#landingContent {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+#landingText {
+    max-width: 50vw;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 600px){
+    #landingText {
+        max-width: 75vw;
+        font-size: 16px;
+    }
+}    
+
+#buttonContainerWrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    min-width: 50vw;
+}
+
+.landingButtons {
+    background-color: var(--main-accent-color);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.landingButtons:hover {
+    color: white;
+}
+
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--main-accent-color);
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+#loginRow {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#loginForm{
+    border: white solid 2px;
+    border-radius: 5px;
+    background-color: white;
+    min-height: 50vh;
+    min-width: 25vw;
+}
+
+#loginForm > form{
+    padding: 0px 15px;
+    color: var(--main-accent-color);
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#thisIsGettingWeird {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#iconImage {
+    width: 3vw;
+    height: auto;
+}
+
+.loginInput {
+    color: var(--main-accent-color);
+    border: var(--main-accent-color) solid 1px;
+    border-radius: 5px;
+}
+
+#loginFields {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.loginInput:active {
+    outline: none;
+}
+
+.loginInput:focus {
+    outline: none;
+}
+
+#userHeader {
+    background-color: var(--main-accent-color);
+    min-height: 8vh;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+#userContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+#userName {
+    padding-right: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+#userAvatar {
+    width: 30px;
+    height: 30px;
+}
