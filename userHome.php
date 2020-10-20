@@ -21,13 +21,36 @@ require_once 'header.php';
 // }
 ?>
 
+<script>
+    window.onload = function() {
+        setActive(document.URL);
+    };
+</script>
+
 <div id="userHeader">
     <div id="userContainer">
         <div id="userName"><?php echo $user; ?></div>
-        <img id='userAvatar' src='userpics/<?php echo $user; ?>.png' alt='Avatar'>
+        <?php showAvatar($user); ?>
     </div>
 </div>
 
-<?php
-require_once 'footer.php';
-?>
+<div id="userContent">
+    <!-- Tab links -->
+    <div class="tab">
+        <a href='summary.php'>
+            <button class="tablinks" id="summaryTab">Summary</button>
+        </a>
+        <a href='transactions.php'>
+            <button class="tablinks" id="transactionsTab">Transactions</button>
+        </a>
+        <a href='loans.php'>
+            <button class="tablinks" id="loansTab">Loans</button>
+        </a>
+        <a href='budget.php'>
+            <button class="tablinks" id="budgetTab">Budgets</button>
+        </a>
+    </div>
+
+    <?php
+    require_once 'footer.php';
+    ?>

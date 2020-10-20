@@ -41,15 +41,10 @@ function sanitizeString($var){
 }
 
 function showAvatar($user) {
-    if (file_exists("userpics/$user.png"))
-        return "userpics/$user.png' alt='Avatar'>";
-
-    $result = queryMysql("SELECT * FROM profiles WHERE user='$user'");
-
-    if ($result->num_rows) {
-        $row = $result->fetch_array(MYSQLI_ASSOC);
-        echo stripslashes($row['text']) . "<br style='clear:left;'><br>";
+    if (file_exists("userpics/$user.png")) {
+        echo "<img id='userAvatar' src='userpics/$user.png' alt='Avatar'>";
+    } else {
+        echo "<img id='userAvatar' src='userpics/defaultAvatar.png' alt='Avatar'>";
     }
-    else echo "<p>Nothing to see here, yet</p><br>";
 }
 ?>

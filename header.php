@@ -17,7 +17,7 @@ echo <<<_INIT
         <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
         <link id="theme" rel='stylesheet' href='css/light-theme.css'>
 
-        <script src='javascript.js'></script>
+        
 
         <title>$clubstr: $userstr</title>
     </head>
