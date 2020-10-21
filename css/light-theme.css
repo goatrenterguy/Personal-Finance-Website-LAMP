@@ -1,242 +1,262 @@
 :root {
-    --main-accent-color: #167b5f;
-  }
+  --main-accent-color: #167b5f;
+}
 
 body {
-    font-family: Nunito, sans-serif;
+  font-family: Nunito, sans-serif;
+}
+/* classes to add float */
+.fleft {
+  float: left;
+}
+.fright {
+  float: right;
+}
+/* classes to clear */
+.clearB {
+  clear: both;
 }
 
 #landingHeader {
-    background-color: var(--main-accent-color);
-    min-height: 33vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  background-color: var(--main-accent-color);
+  min-height: 33vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #headerText {
-    color: #ffffff;
-    text-align: center;
-    font-size: 8vh;
+  color: #ffffff;
+  text-align: center;
+  font-size: 8vh;
 }
 
 @media screen and (max-width: 1000px){
-    #headerText {
-        font-size: 8vw;
-    }
-    #landingHeader{
-        min-height: 33vw;
-    }
+  #headerText {
+    font-size: 8vw;
+  }
+  #landingHeader{
+    min-height: 33vw;
+  }
 }
 
 #landingContent {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 5%;
 }
 
 #landingText {
-    max-width: 50vw;
-    font-size: 20px;
+  max-width: 50vw;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 600px){
-    #landingText {
-        max-width: 75vw;
-        font-size: 16px;
-    }
-}    
+  #landingText {
+    max-width: 75vw;
+    font-size: 16px;
+  }
+}
 
 #buttonContainerWrapper {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 5%;
 }
 
 #buttonContainer {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    min-width: 50vw;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  min-width: 50vw;
 }
 
 .landingButtons {
-    background-color: var(--main-accent-color);
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 5px;
+  background-color: var(--main-accent-color);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
 }
 
 .landingButtons:hover {
-    color: white;
+  color: white;
 }
 
 .loginContainer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: var(--main-accent-color);
-    min-width: 100vw;
-    min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--main-accent-color);
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 #loginRow {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 
 #loginForm{
-    border: white solid 2px;
-    border-radius: 5px;
-    background-color: white;
-    min-height: 50vh;
-    min-width: 25vw;
+  border: white solid 2px;
+  border-radius: 5px;
+  background-color: white;
+  min-height: 50vh;
+  min-width: 25vw;
 }
 
 #loginForm > form{
-    padding: 0px 15px;
-    color: var(--main-accent-color);
-    min-height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+  padding: 0px 15px;
+  color: var(--main-accent-color);
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 #thisIsGettingWeird {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #iconImage {
-    width: 3vw;
-    height: auto;
+  width: 3vw;
+  height: auto;
 }
 
 .loginInput {
-    color: var(--main-accent-color);
-    border: var(--main-accent-color) solid 1px;
-    border-radius: 5px;
+  color: var(--main-accent-color);
+  border: var(--main-accent-color) solid 1px;
+  border-radius: 5px;
 }
 
 #loginFields {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .loginInput:active {
-    outline: none;
+  outline: none;
 }
 
 .loginInput:focus {
-    outline: none;
+  outline: none;
 }
 
 #userHeader {
-    background-color: var(--main-accent-color);
-    min-height: 8vh;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
+  background-color: var(--main-accent-color);
+  min-height: 8vh;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
 }
 
 #userContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    padding-bottom: 10px;
-    padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-right: 10px;
 }
 
 #userName {
-    padding-right: 10px;
-    font-size: 18px;
-    color: white;
+  padding-right: 10px;
+  font-size: 18px;
+  color: white;
 }
 
 #userAvatar {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 
 #userContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 40px;
-    margin-left: 5vw;
-    max-width: 90vw;
-    width: 90vw;
-    height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 40px;
+  margin-left: 5vw;
+  max-width: 90vw;
+  width: 90vw;
+  height: 85vh;
 }
 
 #activePage {
-    flex-grow: 2;
+  flex-grow: 2;
 }
 
 .tablinks {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
 }
 
 /* Change background color of buttons on hover */
 .tablinks button:hover {
-    background-color: #ddd;
-  }
-  
+  background-color: #ddd;
+}
+
 /* Create an active/current tablink class */
 .tablinks button.active {
-    background-color: #ccc;
-  }
+  background-color: #ccc;
+}
 
 /* Style the tab */
 .tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-  }
-  
-  /* Style the buttons that are used to open the tab content */
-  .tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: #ddd;
-  }
-  
-  /* Create an active/current tablink class */
-  .tab button.active {
-    background-color: #ccc;
-  }
-  
-  /* Style the tab content */
-  .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-  }
+  /* overflow: hidden; */
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+/* Style the calculator form */
+.interest_calc .form_labels label, .interest_calc .form_input input{
+  display: block;
+  margin: 2.5px 5px;
+}
+.interest_calc .form {
+  display: inline-block;
+  width: 25%;
+}

@@ -49,6 +49,9 @@ require_once 'header.php';
         <a href='budget.php'>
             <button class="tablinks" id="budgetTab">Budgets</button>
         </a>
+        <a href='calculator.php'>
+            <button class="tablinks" id="calculator">Savings Calculator</button>
+        </a>
     </div>
 
     <?php
