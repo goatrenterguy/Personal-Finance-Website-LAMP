@@ -4,11 +4,80 @@ require_once 'userHome.php'
 ?>
 
     <div id="activePage">
-
-        <h1>You are looking at the Budget Page</h1>
         
+    <head>
+      <link rel="stylesheet" href="budgetstyle.css" type="text/css">
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Budget Manager</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="left-column">
+                <h2>Income</h2>
+                <p>$0 so far of $150</p>
+                <h2>Spending</h2>
+                <p>$0 spent of $150</p>
+                <h2>Goals</h2>
+                <p>$0 spent of $0</p>
+            </div>
+
+            <div class="center-column">
+                    <div id="form-box">
+                        <form>
+                            <div>
+                                <span>Month:</span>
+                                    <select name="month">
+                                        <option value="January">January</option>
+                                        <option value="February">February</option>
+                                        <option value="March">March</option>
+                                        <option value="April">April</option>
+                                        <option value="May">May</option>
+                                        <option value="June">June</option>
+                                        <option value="July">July</option>
+                                        <option value="August">August</option>
+                                        <option value="September">September</option>
+                                        <option value="October">October</option>
+                                        <option value="November">November</option>
+                                        <option value="December">December</option>
+                                    </select>
+
+                                <span>Year:</span>
+                                    <select name="month">
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                        <option value="2027">2027</option>
+                                        <option value="2028">2028</option>
+                                        <option value="2029">2029</option>
+                                        <option value="2030">2030</option>
+                                        <option value="2031">2031</option>
+                                    </select>
+                            </div>
+                        </form>
+                    </div>
+                <div type="button" class="budgetButton" id="button">Create New Budget</div>
+            </div>
+
+            <div class="right-column">
+                <h2>You've budgeted...</h2>
+                <p>Income:  $0</p>
+                <p>Spending:    $150</p>
+                <p>Goals:   $0</p>
+                <p></p>
+                <p>Left over: -$150</p>
+            </div>
+        </div>
+    </body>
+
     </div>
-</div>
 
 <?php
 require_once 'footer.php';
