@@ -28,7 +28,6 @@ require_once 'userHome.php'
             <div class="center-column">
                     <div id="form-box">
                         <form>
-                            <div>
                                 <span>Month:</span>
                                     <select name="month">
                                         <option value="January">January</option>
@@ -60,10 +59,41 @@ require_once 'userHome.php'
                                         <option value="2030">2030</option>
                                         <option value="2031">2031</option>
                                     </select>
-                            </div>
+                                <div type="button" class="budgetButton" id="button">Create New Budget</div>
                         </form>
                     </div>
-                <div type="button" class="budgetButton" id="button">Create New Budget</div>
+                
+                    <div id="box1">
+                        <p>January 2020 Budget...</p>
+                        <span>Category:</span> 
+                              <select name="category">
+                                  <option value="income">Income</option>
+                                  <option value="housing">Housing</option>
+                                  <option value="transportation">Transportation</option>
+                                  <option value="food">Food</option>
+                                  <option value="utilities">Utilities</option>
+                                  <option value="medical">Medical/Healthcare</option>
+                                  <option value="insurance">Insurance</option>
+                                  <option value="personal">Personal</option>
+                                  <option value="debt">Debt Payments</option>
+                                  <option value="entertainment">Entertainment</option>
+                                  <option value="miscellaneous">Miscellaneous</option>
+                              </select>
+                        
+                        <div id="amount">
+                            <span>Amount:</span> <input type="number" name="amount" placeholder="How much?">
+                        </div>
+                        
+                        <div>
+                            <div type="button" class="setCategory" id="button">Set Category</div>
+                        </div>
+                    </div>
+                    
+                    <div id="box2">
+                        <p>This is where the Category : Amount would go</p>
+                
+                    </div>
+                
             </div>
 
             <div class="right-column">
